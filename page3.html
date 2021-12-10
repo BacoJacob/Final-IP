@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tip Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+    <header class="box img">
+      <div id="logo"></div>
+    </header>
+    
+    <header class="box header">
+      <h1>Tip Calculator</h1>
+    </header>
+    <nav class="box nav">
+      <ul class="a">
+        <li class="a"><a href="index.html">Home</a></li>
+        <li class="a"><a href="page2.html">Form</a></li>
+        <li class="a"><a href="page3.html">Tip Calculator</a></li>
+        <li class="a"><a href="https://www.columbusstate.edu/">CSU</a></li>
+      </ul>
+    </nav>
+    <main class="box content">
+      <form action="https://webdevbasics.net/scripts/yoga.php" method="post">
+        <label for="pTotal">Total Before Tip:</label><br>
+        <input type="number" id="pTotal" name="pTotal" value="0.00" step="0.01" min="0" required><br>
+
+        <div class="slidecontainer">
+          <input type="range" min="10" max="50" value="10" class="slider" id="Ptip">
+          <p><span id="percent"></span>&#37;</p>
+        </div>
+        <input type="button" value="Calculate" onclick="getTotal()"><br>
+        <input type="reset" value="Reset"><br><br>
+        <label for="pTotal">Tip:</label><br>
+        <p id="fTip"></p>
+        <label for="pTotal">Total After Tip:</label><br>
+        <p id="fTotal"></p>
+
+      </form>
+    </main>
+    <footer class="box footer">
+      <p>&copy; 2021 Jacob Casina</p>
+      <a href="mailto:jacob@spam.com">Email us here</a>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

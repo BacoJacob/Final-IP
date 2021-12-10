@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+    <header class="box img">
+      <div id="logo"></div>
+    </header>
+    
+    <header class="box header">
+      <h1>Registration Form</h1>
+    </header>
+    <nav class="box nav">
+      <ul class="a">
+        <li class="a"><a href="index.html">Home</a></li>
+        <li class="a"><a href="page2.html">Form</a></li>
+        <li class="a"><a href="page3.html">Tip Calculator</a></li>
+        <li class="a"><a href="https://www.columbusstate.edu/">CSU</a></li>
+      </ul>
+    </nav>
+    <main class="box content">
+      <form action="https://webdevbasics.net/scripts/yoga.php" method="post">
+        <label for="fname">Last name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">First name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="state">State of resisdence:</label><br>
+        <select id="states" name="states" required>
+          <option value="Blank"></option>
+          <option value="AL">AL</option>
+          <option value="FL">FL</option>
+          <option value="GA">GA</option>
+        </select><br>
+
+        <label for="birthdate">Birth Date:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+
+        <label for="Uname">Username:</label><br>
+        <input type="text" id="Uname" name="Uname" required><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" required><br>
+        <label for="pwdC">Confirm Password:</label><br>
+        <input type="password" id="pwdC" name="pwdC" required><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </main>
+    <footer class="box footer">
+      <p>&copy; 2021 Jacob Casina</p>
+      <a href="mailto:jacob@spam.com">Email us here</a>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
